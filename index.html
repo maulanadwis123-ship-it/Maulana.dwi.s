@@ -1,1038 +1,1085 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description"
-        content="Professional Portfolio Maulana - Internal Audit, Internal Control, Dealer Finance & Consumer Financing Audit">
+<title>Maulana Dwi Saputro | Internal Auditor & Internal Control</title>
 
-  <title>Maulana Dwi Saputro| Internal Audit Portfolio</title>
+<meta name="description"
+content="Portfolio profesional Maulana Dwi Saputro - Internal Auditor & Internal Control Officer">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+    line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(7, 26, 51, 0.97);
+    padding: 14px 20px;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links a:hover {
+    color: #8fc5ff;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    background: linear-gradient(135deg, #071a33, #123a67);
+    color: white;
+    padding: 65px 20px;
+}
+
+.hero-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 35px;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #b9d7ff;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #d9e5f4;
+    max-width: 650px;
+    margin: auto;
+}
+
+.profile-photo {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(255,255,255,0.85);
+    background: #294a70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================= BUTTON ================= */
+
+.buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 17px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.btn-primary {
+    background: white;
+    color: #123a67;
+}
+
+.btn-outline {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #123a67;
+}
+
+/* ================= SECTION ================= */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.section-title span {
+    color: #1976d2;
+    font-weight: bold;
+}
+
+.section-title h2 {
+    font-size: 26px;
+}
+
+.section-desc {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+/* ================= KPI ================= */
+
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.kpi {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.kpi-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #123a67;
+}
+
+.kpi-label {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* ================= CARDS ================= */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.card {
+    background: white;
+    padding: 23px;
+    border-radius: 17px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* ================= EXPERIENCE ================= */
+
+.timeline {
+    border-left: 3px solid #1976d2;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    background: white;
+    padding: 22px;
+    margin-bottom: 18px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.timeline-item h3 {
+    margin-bottom: 4px;
+}
+
+.timeline-item .company {
+    color: #1976d2;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.timeline-item p {
+    margin-top: 10px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* ================= CASE STUDY ================= */
+
+.case-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.case {
+    background: white;
+    padding: 22px;
+    border-radius: 15px;
+    border-left: 4px solid #1976d2;
+}
+
+.case-number {
+    font-size: 13px;
+    color: #1976d2;
+    font-weight: bold;
+}
+
+.case h3 {
+    margin: 6px 0;
+}
+
+.case p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.gallery-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-caption {
+    padding: 18px;
+}
+
+.gallery-caption h3 {
+    margin-bottom: 6px;
+}
+
+.gallery-caption p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* ================= MINDSET ================= */
+
+.quote {
+    background: #0b2341;
+    color: white;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.quote span {
+    display: block;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #b9d7ff;
+}
+
+/* ================= CONTACT ================= */
+
+.contact {
+    background: #eaf1f9;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.contact p {
+    margin: 8px 0;
+}
+
+.contact a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #071a33;
+    color: #b9c8da;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 13px;
+}
+
+/* ================= DESKTOP ================= */
+
+@media (min-width: 768px) {
+
+    .nav-links {
+        display: flex;
     }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fb;
-      color: #172033;
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    .container {
-      width: 92%;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    /* ================= NAVBAR ================= */
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255,255,255,.96);
-      border-bottom: 1px solid #e5e7eb;
-      backdrop-filter: blur(10px);
-    }
-
-    .nav-content {
-      min-height: 64px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .logo {
-      font-size: 20px;
-      font-weight: 800;
-      color: #111827;
-      white-space: nowrap;
-    }
-
-    .logo span {
-      color: #2563eb;
-    }
-
-    .menu {
-      display: flex;
-      gap: 20px;
-      overflow-x: auto;
-    }
-
-    .menu a {
-      color: #475467;
-      font-size: 13px;
-      font-weight: 700;
-      white-space: nowrap;
-      transition: .2s;
-    }
-
-    .menu a:hover {
-      color: #2563eb;
-    }
-
-    /* ================= HERO ================= */
 
     .hero {
-      background:
-        radial-gradient(circle at top right, #294b7a 0%, transparent 35%),
-        linear-gradient(135deg, #07111f, #172b4d);
-      color: white;
-      padding: 70px 0;
+        padding: 85px 20px;
     }
 
-    .hero-content {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 40px;
-      align-items: center;
+    .hero-container {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .eyebrow {
-      color: #93b4e8;
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 12px;
+    .hero-text {
+        text-align: left;
     }
 
-    h1 {
-      font-size: 48px;
-      line-height: 1.05;
-      margin-bottom: 12px;
-    }
-
-    .hero h2 {
-      font-size: 19px;
-      font-weight: 500;
-      color: #d5deeb;
-      margin-bottom: 18px;
-    }
-
-    .hero p {
-      color: #b9c5d5;
-      font-size: 14px;
-      max-width: 680px;
+    .hero-text p {
+        margin: 0;
     }
 
     .buttons {
-      display: flex;
-      gap: 10px;
-      margin-top: 25px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 12px 18px;
-      border-radius: 10px;
-      font-size: 13px;
-      font-weight: bold;
-      display: inline-block;
-      transition: .2s;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .btn-primary {
-      background: white;
-      color: #101828;
-    }
-
-    .btn-outline {
-      border: 1px solid #66758d;
-      color: white;
-    }
-
-    .btn-outline:hover {
-      background: rgba(255,255,255,.08);
-    }
-
-    /* ================= PROFILE ================= */
-
-    .profile-wrapper {
-      display: flex;
-      justify-content: center;
+        justify-content: flex-start;
     }
 
     .profile-photo {
-      width: 190px;
-      height: 190px;
-      border-radius: 28px;
-      background: linear-gradient(145deg, #223553, #101c2e);
-      border: 1px solid #526782;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #9fb0c7;
-      font-size: 12px;
-      overflow: hidden;
-      box-shadow: 0 20px 50px rgba(0,0,0,.25);
+        width: 190px;
+        height: 190px;
     }
 
-    .profile-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* ================= SECTION ================= */
-
-    section {
-      padding: 55px 0;
-    }
-
-    .section-title {
-      font-size: 26px;
-      margin-bottom: 5px;
-    }
-
-    .section-subtitle {
-      color: #667085;
-      font-size: 14px;
-      margin-bottom: 28px;
-    }
-
-    /* ================= KPI ================= */
-
-    .kpis {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-    }
-
-    .kpi {
-      background: white;
-      border: 1px solid #e4e7ec;
-      padding: 20px;
-      border-radius: 16px;
-      transition: .2s;
-    }
-
-    .kpi:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 25px rgba(16,24,40,.07);
-    }
-
-    .kpi-number {
-      font-size: 28px;
-      font-weight: 800;
-      color: #101828;
-    }
-
-    .kpi-label {
-      color: #667085;
-      font-size: 12px;
-      font-weight: bold;
-    }
-
-    /* ================= CARDS ================= */
-
-    .cards {
-      display: grid;
-      gap: 15px;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid #e4e7ec;
-      border-radius: 16px;
-      padding: 22px;
-      transition: .2s;
-    }
-
-    .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 28px rgba(16,24,40,.08);
-    }
-
-    .card h3 {
-      font-size: 16px;
-      margin-bottom: 9px;
-    }
-
-    .card p {
-      color: #667085;
-      font-size: 13px;
-    }
-
-    .tags {
-      margin-top: 14px;
-      display: flex;
-      gap: 7px;
-      flex-wrap: wrap;
-    }
-
-    .tag {
-      background: #eff6ff;
-      color: #1d4ed8;
-      border-radius: 50px;
-      padding: 5px 9px;
-      font-size: 10px;
-      font-weight: bold;
-    }
-
-    /* ================= TIMELINE ================= */
-
-    .timeline {
-      border-left: 2px solid #e4e7ec;
-      padding-left: 22px;
-    }
-
-    .timeline-item {
-      margin-bottom: 28px;
-      position: relative;
-    }
-
-    .timeline-item:last-child {
-      margin-bottom: 0;
-    }
-
-    .timeline-item::before {
-      content: "";
-      position: absolute;
-      left: -29px;
-      top: 5px;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #2563eb;
-      box-shadow: 0 0 0 4px #eff6ff;
-    }
-
-    .timeline-item small {
-      color: #667085;
-      font-size: 11px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: .5px;
-    }
-
-    .timeline-item h3 {
-      font-size: 16px;
-      margin: 4px 0;
-    }
-
-    .timeline-item p {
-      color: #667085;
-      font-size: 13px;
-    }
-
-    /* ================= PROCESS ================= */
-
-    .process {
-      display: grid;
-      gap: 13px;
-    }
-
-    .process-item {
-      display: flex;
-      gap: 14px;
-      background: white;
-      border: 1px solid #e4e7ec;
-      border-radius: 14px;
-      padding: 17px;
-    }
-
-    .number {
-      min-width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      background: #101828;
-      color: white;
-      display: grid;
-      place-items: center;
-      font-size: 11px;
-      font-weight: bold;
-    }
-
-    .process-item h3 {
-      font-size: 14px;
-      margin-bottom: 3px;
-    }
-
-    .process-item p {
-      color: #667085;
-      font-size: 12px;
-    }
-
-    /* ================= CONTACT ================= */
-
-    .contact-card {
-      background:
-        radial-gradient(circle at top right, #294b7a, transparent 40%),
-        #101828;
-      color: white;
-      padding: 30px;
-      border-radius: 20px;
-    }
-
-    .contact-card h2 {
-      font-size: 24px;
-    }
-
-    .contact-card p {
-      color: #b9c5d5;
-      font-size: 13px;
-      margin: 8px 0 20px;
-      max-width: 650px;
-    }
-
-    .contact-link {
-      display: block;
-      color: white;
-      background: #1d2939;
-      padding: 13px;
-      border-radius: 9px;
-      margin-bottom: 9px;
-      font-size: 13px;
-      transition: .2s;
-    }
-
-    .contact-link:hover {
-      background: #263548;
-      transform: translateX(3px);
-    }
-
-    /* ================= FOOTER ================= */
-
-    footer {
-      background: #07111f;
-      color: #98a5b7;
-      text-align: center;
-      padding: 26px;
-      font-size: 11px;
-    }
-
-    /* ================= DESKTOP ================= */
-
-    @media (min-width: 700px) {
-
-      .hero-content {
-        grid-template-columns: 1fr 220px;
-      }
-
-      h1 {
-        font-size: 58px;
-      }
-
-      .profile-wrapper {
-        justify-content: flex-end;
-      }
-
-      .profile-photo {
-        width: 200px;
-        height: 200px;
-      }
-
-      .kpis {
+    .kpi-grid {
         grid-template-columns: repeat(4, 1fr);
-      }
-
-      .cards {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .process {
-        grid-template-columns: repeat(2, 1fr);
-      }
     }
 
-    /* ================= SMALL MOBILE ================= */
-
-    @media (max-width: 699px) {
-
-      .nav-content {
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 14px 0;
-      }
-
-      .menu {
-        width: 100%;
-        gap: 18px;
-        padding-bottom: 3px;
-      }
-
-      .hero {
-        padding: 55px 0;
-      }
-
-      h1 {
-        font-size: 42px;
-      }
-
-      .profile-wrapper {
-        justify-content: flex-start;
-      }
-
-      .profile-photo {
-        width: 150px;
-        height: 150px;
-      }
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-  </style>
+
+    .case-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-card img {
+        height: 200px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-  <!-- ================= NAVBAR ================= -->
+<!-- ================= NAVBAR ================= -->
 
-  <nav>
-    <div class="container nav-content">
+<nav>
+    <div class="nav-container">
 
-      <div class="logo">
-        MAULANA<span>.</span>
-      </div>
+        <div class="logo">
+            MAULANA DWI SAPUTRO
+        </div>
 
-      <div class="menu">
-        <a href="#about">About</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#experience">Experience</a>
-        <a href="#cases">Cases</a>
-        <a href="#contact">Contact</a>
-      </div>
+        <div class="nav-links">
+            <a href="#profile">Profile</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#experience">Experience</a>
+            <a href="#case-study">Case Study</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
 
     </div>
-  </nav>
+</nav>
 
 
-  <!-- ================= HERO ================= -->
+<!-- ================= HERO ================= -->
 
-  <section class="hero" id="about">
+<header class="hero" id="profile">
 
-    <div class="container hero-content">
+    <div class="hero-container">
 
-      <div>
+        <div class="hero-text">
 
-        <div class="eyebrow">
-          Internal Audit • Internal Control • Risk
+            <h1>
+                Maulana Dwi Saputro
+            </h1>
+
+            <h2>
+                Internal Auditor & Internal Control Officer
+            </h2>
+
+            <p>
+                Turning audit findings into stronger controls
+                and better business decisions.
+            </p>
+
+            <div class="buttons">
+
+                <!-- GANTI FILE INI DENGAN CV KAMU -->
+                <a href="CV-Maulana-Dwi-Saputro.pdf"
+                   class="btn btn-primary"
+                   target="_blank">
+                    Download CV
+                </a>
+
+                <!-- GANTI NOMOR WHATSAPP -->
+                <a href="https://wa.me/628xxxxxxxxxx"
+                   class="btn btn-outline"
+                   target="_blank">
+                    WhatsApp
+                </a>
+
+                <!-- GANTI LINK LINKEDIN -->
+                <a href="https://linkedin.com/in/username"
+                   class="btn btn-outline"
+                   target="_blank">
+                    LinkedIn
+                </a>
+
+            </div>
+
         </div>
 
-        <h1>
-          Maulana
-        </h1>
 
-        <h2>
-          Internal Auditor & Internal Control Officer
-        </h2>
-
-        <p>
-          Experienced in Dealer Finance & Consumer Financing Audit,
-          internal control evaluation, risk identification, investigation,
-          operational audit, and practical audit recommendations.
-        </p>
-
-        <div class="buttons">
-
-          <a href="#expertise" class="btn btn-primary">
-            Explore Portfolio
-          </a>
-
-          <a href="#contact" class="btn btn-outline">
-            Contact Me
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- FOTO PROFIL -->
-
-      <div class="profile-wrapper">
-
+        <!-- FOTO PROFIL -->
         <div class="profile-photo">
 
-          <!--
-          Setelah upload foto ke repository,
-          ubah bagian ini menjadi:
-
-          <img src="foto.jpg" alt="Maulana Dwi Saputro">
-          -->
-
-          FOTO PROFIL
+            <!-- Upload foto dengan nama foto.jpg ke GitHub -->
+            <img src="foto.jpg"
+                 alt="Maulana Dwi Saputro">
 
         </div>
-
-      </div>
 
     </div>
 
-  </section>
+</header>
 
 
-  <!-- ================= KPI ================= -->
+<!-- ================= DASHBOARD ================= -->
 
-  <section>
+<section class="section" id="dashboard">
 
-    <div class="container">
+    <div class="section-title">
+        <span>01</span>
+        <h2>Audit Dashboard</h2>
+    </div>
 
-      <div class="kpis">
+    <p class="section-desc">
+        Professional overview of audit exposure and
+        financing business experience.
+    </p>
+
+    <div class="kpi-grid">
 
         <div class="kpi">
-          <div class="kpi-number">83</div>
-          <div class="kpi-label">Branch Network Coverage</div>
+            <div class="kpi-number">16</div>
+            <div class="kpi-label">
+                Branches Audited
+            </div>
         </div>
 
         <div class="kpi">
-          <div class="kpi-number">CF</div>
-          <div class="kpi-label">Consumer Financing</div>
+            <div class="kpi-number">83</div>
+            <div class="kpi-label">
+                Branch Network
+            </div>
         </div>
 
         <div class="kpi">
-          <div class="kpi-number">RISK</div>
-          <div class="kpi-label">Risk Identification</div>
+            <div class="kpi-number">CF</div>
+            <div class="kpi-label">
+                Consumer Financing
+            </div>
         </div>
 
         <div class="kpi">
-          <div class="kpi-number">AUDIT</div>
-          <div class="kpi-label">Internal Audit</div>
+            <div class="kpi-number">RISK</div>
+            <div class="kpi-label">
+                Risk-Based Approach
+            </div>
         </div>
-
-      </div>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- ================= EXPERTISE ================= -->
+<!-- ================= EXPERTISE ================= -->
 
-  <section id="expertise">
+<section class="section" id="expertise">
 
-    <div class="container">
+    <div class="section-title">
+        <span>02</span>
+        <h2>Audit Expertise</h2>
+    </div>
 
-      <h2 class="section-title">
-        Audit Expertise
-      </h2>
+    <p class="section-desc">
+        Area pengalaman utama dalam Dealer Finance,
+        Consumer Financing, Internal Control dan Risk Assessment.
+    </p>
 
-      <p class="section-subtitle">
-        Core areas of professional experience.
-      </p>
-
-
-      <div class="cards">
+    <div class="card-grid">
 
         <div class="card">
 
-          <h3>
-            Dealer & Showroom Assessment
-          </h3>
+            <h3>
+                Dealer & Showroom Assessment
+            </h3>
 
-          <p>
-            Review aktivitas dealer/showroom, kepatuhan kerja sama,
-            penggunaan plafond, aktivitas marketing, dan potensi
-            operational risk.
-          </p>
-
-          <div class="tags">
-            <span class="tag">Dealer Audit</span>
-            <span class="tag">Compliance</span>
-            <span class="tag">Risk</span>
-          </div>
+            <p>
+                Assessment terhadap aktivitas dealer/showroom,
+                partner eligibility, aktivitas marketing dan
+                kepatuhan terhadap ketentuan perusahaan.
+            </p>
 
         </div>
 
 
         <div class="card">
 
-          <h3>
-            Consumer Financing Audit
-          </h3>
+            <h3>
+                Consumer Financing Process
+            </h3>
 
-          <p>
-            Review proses pembiayaan, kelengkapan dokumen,
-            implementasi SOP, kualitas proses, serta indikasi
-            penyimpangan dalam aktivitas pembiayaan.
-          </p>
-
-          <div class="tags">
-            <span class="tag">CF Audit</span>
-            <span class="tag">SOP</span>
-            <span class="tag">Financing</span>
-          </div>
+            <p>
+                Review proses pembiayaan mulai dari pengajuan,
+                approval, pencairan hingga monitoring portfolio.
+            </p>
 
         </div>
 
 
         <div class="card">
 
-          <h3>
-            Portfolio & Unit Verification
-          </h3>
+            <h3>
+                Portfolio & Unit Verification
+            </h3>
 
-          <p>
-            Physical checking, validasi informasi unit,
-            monitoring kondisi unit, serta identifikasi
-            red flags pada portfolio pembiayaan.
-          </p>
-
-          <div class="tags">
-            <span class="tag">Field Audit</span>
-            <span class="tag">Unit Verification</span>
-            <span class="tag">Risk</span>
-          </div>
+            <p>
+                Pemeriksaan keberadaan unit, kondisi unit,
+                status penggunaan unit serta indikasi risiko
+                dalam portfolio pembiayaan.
+            </p>
 
         </div>
 
 
         <div class="card">
 
-          <h3>
-            Collateral & Document Control
-          </h3>
+            <h3>
+                Collateral & Document Control
+            </h3>
 
-          <p>
-            Review pengelolaan dokumen pembiayaan dan collateral,
-            termasuk custody, movement, release control,
-            serta kepatuhan terhadap prosedur.
-          </p>
-
-          <div class="tags">
-            <span class="tag">Collateral</span>
-            <span class="tag">Document Control</span>
-            <span class="tag">Internal Control</span>
-          </div>
+            <p>
+                Review pengendalian dokumen utama,
+                termasuk proses penerimaan, penyimpanan,
+                monitoring dan pengiriman collateral.
+            </p>
 
         </div>
-
-
-        <div class="card">
-
-          <h3>
-            Investigation & Deviation Analysis
-          </h3>
-
-          <p>
-            Analisis terhadap indikasi penyimpangan,
-            control weakness, data inconsistency,
-            serta potensi operational dan financial risk.
-          </p>
-
-          <div class="tags">
-            <span class="tag">Investigation</span>
-            <span class="tag">Fraud Risk</span>
-            <span class="tag">Root Cause</span>
-          </div>
-
-        </div>
-
-
-        <div class="card">
-
-          <h3>
-            Audit Recommendation
-          </h3>
-
-          <p>
-            Menyusun corrective dan preventive action
-            berdasarkan root cause agar kelemahan kontrol
-            dapat diminimalkan dan proses menjadi lebih efektif.
-          </p>
-
-          <div class="tags">
-            <span class="tag">CAPA</span>
-            <span class="tag">RCA</span>
-            <span class="tag">Improvement</span>
-          </div>
-
-        </div>
-
-      </div>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- ================= EXPERIENCE ================= -->
+<!-- ================= EXPERIENCE ================= -->
 
-  <section id="experience">
+<section class="section" id="experience">
 
-    <div class="container">
+    <div class="section-title">
+        <span>03</span>
+        <h2>Professional Experience</h2>
+    </div>
 
-      <h2 class="section-title">
-        Professional Experience
-      </h2>
-
-      <p class="section-subtitle">
-        Experience snapshot.
-      </p>
-
-
-      <div class="timeline">
+    <div class="timeline">
 
         <div class="timeline-item">
 
-          <small>
-            Professional Experience
-          </small>
+            <div class="company">
+                PT Gratama Finance
+            </div>
 
-          <h3>
-            PT Gratama Finance
-          </h3>
+            <h3>
+                Internal Auditor & Internal Control Officer
+            </h3>
 
-          <p>
-            Internal Audit / Internal Control
-          </p>
+            <p>
+                Melaksanakan operational internal audit dan
+                internal control evaluation pada jaringan cabang
+                perusahaan pembiayaan.
+            </p>
 
         </div>
 
 
         <div class="timeline-item">
 
-          <small>
-            Audit Coverage
-          </small>
+            <div class="company">
+                Branch & Dealer Finance Audit
+            </div>
 
-          <h3>
-            Branch & Dealer Finance Audit
-          </h3>
+            <h3>
+                Branch / Showroom Examination
+            </h3>
 
-          <p>
-            Operational audit, dealer/showroom assessment,
-            internal control evaluation, findings,
-            recommendations, and follow-up.
-          </p>
+            <p>
+                Melakukan pemeriksaan terhadap proses pembiayaan,
+                aktivitas dealer/showroom, kelengkapan dokumen,
+                kondisi unit, portfolio dan kepatuhan SOP.
+            </p>
 
         </div>
 
 
         <div class="timeline-item">
 
-          <small>
-            Consumer Financing
-          </small>
+            <div class="company">
+                Risk & Investigation
+            </div>
 
-          <h3>
-            Financing Process Review
-          </h3>
+            <h3>
+                Deviation & Risk Analysis
+            </h3>
 
-          <p>
-            Review proses pembiayaan, dokumen,
-            unit verification, collateral,
-            dan kepatuhan terhadap SOP.
-          </p>
+            <p>
+                Melakukan analisis terhadap indikasi penyimpangan,
+                kelemahan kontrol dan kondisi yang berpotensi
+                menimbulkan risiko bagi perusahaan.
+            </p>
 
         </div>
 
 
         <div class="timeline-item">
 
-          <small>
-            Risk & Investigation
-          </small>
+            <div class="company">
+                Internal Control
+            </div>
 
-          <h3>
-            Deviation Analysis
-          </h3>
+            <h3>
+                Control Improvement
+            </h3>
 
-          <p>
-            Analysis terhadap indikasi penyimpangan,
-            control weakness, root cause,
-            dan risiko yang berpotensi merugikan perusahaan.
-          </p>
+            <p>
+                Mengevaluasi efektivitas kontrol serta menyusun
+                rekomendasi perbaikan yang dapat diterapkan
+                oleh unit terkait.
+            </p>
 
         </div>
-
-      </div>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- ================= CASE STUDY ================= -->
+<!-- ================= CASE STUDY ================= -->
 
-  <section id="cases">
+<section class="section" id="case-study">
 
-    <div class="container">
+    <div class="section-title">
+        <span>04</span>
+        <h2>Case Study Approach</h2>
+    </div>
 
-      <h2 class="section-title">
-        Case Study Approach
-      </h2>
+    <p class="section-desc">
+        Pendekatan dalam mengubah temuan audit menjadi
+        rekomendasi perbaikan yang dapat diterapkan.
+    </p>
 
-      <p class="section-subtitle">
-        Confidential company information is intentionally excluded.
-      </p>
+    <div class="case-grid">
 
+        <div class="case">
 
-      <div class="process">
+            <div class="case-number">
+                01 — IDENTIFY
+            </div>
 
-        <div class="process-item">
-
-          <div class="number">01</div>
-
-          <div>
-
-            <h3>Identify</h3>
+            <h3>
+                Identify Risk
+            </h3>
 
             <p>
-              Understand process, control points,
-              evidence, exceptions, and red flags.
+                Mengidentifikasi kondisi, risiko dan potensi
+                dampak terhadap proses bisnis.
             </p>
-
-          </div>
 
         </div>
 
 
-        <div class="process-item">
+        <div class="case">
 
-          <div class="number">02</div>
+            <div class="case-number">
+                02 — ASSESS
+            </div>
 
-          <div>
-
-            <h3>Assess</h3>
+            <h3>
+                Assess Control
+            </h3>
 
             <p>
-              Evaluate root cause, impact,
-              likelihood, and control effectiveness.
+                Menilai kecukupan kontrol dan menemukan
+                control weakness berdasarkan bukti audit.
             </p>
-
-          </div>
 
         </div>
 
 
-        <div class="process-item">
+        <div class="case">
 
-          <div class="number">03</div>
+            <div class="case-number">
+                03 — RECOMMEND
+            </div>
 
-          <div>
-
-            <h3>Recommend</h3>
+            <h3>
+                Recommend Improvement
+            </h3>
 
             <p>
-              Translate findings into practical
-              corrective and preventive actions.
+                Memberikan rekomendasi yang practical,
+                measurable dan sesuai dengan proses bisnis.
             </p>
-
-          </div>
 
         </div>
 
 
-        <div class="process-item">
+        <div class="case">
 
-          <div class="number">04</div>
+            <div class="case-number">
+                04 — FOLLOW UP
+            </div>
 
-          <div>
-
-            <h3>Follow Up</h3>
+            <h3>
+                Follow Up
+            </h3>
 
             <p>
-              Monitor implementation and assess
-              whether control gaps have been addressed.
+                Memantau tindak lanjut dan memastikan
+                corrective action berjalan.
             </p>
 
-          </div>
-
         </div>
-
-      </div>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- ================= AUDIT MINDSET ================= -->
+<!-- ================= GALLERY ================= -->
 
-  <section>
+<section class="section" id="gallery">
 
-    <div class="container">
+    <div class="section-title">
+        <span>05</span>
+        <h2>Gallery Kegiatan</h2>
+    </div>
 
-      <div class="card">
+    <p class="section-desc">
+        Dokumentasi kegiatan profesional dalam pelaksanaan
+        audit, verification, internal control dan risk assessment.
+    </p>
 
-        <h3>
-          Audit Mindset
-        </h3>
+    <div class="gallery-grid">
 
-        <p style="font-size:15px;margin-top:10px;color:#344054;">
 
-          “Audit is not only about finding what is wrong.
-          It is about understanding why the control failed,
-          what risk it creates, and how the process can become stronger.”
+        <!-- FOTO 1 -->
 
-        </p>
+        <div class="gallery-card">
 
-      </div>
+            <img src="gallery-audit.jpg"
+                 alt="Branch Audit">
+
+            <div class="gallery-caption">
+
+                <h3>
+                    Branch Audit
+                </h3>
+
+                <p>
+                    Pelaksanaan operational audit dan
+                    evaluasi internal control.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOTO 2 -->
+
+        <div class="gallery-card">
+
+            <img src="gallery-dealer.jpg"
+                 alt="Dealer Assessment">
+
+            <div class="gallery-caption">
+
+                <h3>
+                    Dealer Assessment
+                </h3>
+
+                <p>
+                    Assessment aktivitas dealer/showroom
+                    dan proses pembiayaan.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOTO 3 -->
+
+        <div class="gallery-card">
+
+            <img src="gallery-unit.jpg"
+                 alt="Unit Verification">
+
+            <div class="gallery-caption">
+
+                <h3>
+                    Unit Verification
+                </h3>
+
+                <p>
+                    Verifikasi keberadaan, kondisi dan
+                    status unit pembiayaan.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOTO 4 -->
+
+        <div class="gallery-card">
+
+            <img src="gallery-document.jpg"
+                 alt="Document Review">
+
+            <div class="gallery-caption">
+
+                <h3>
+                    Document Review
+                </h3>
+
+                <p>
+                    Pemeriksaan dokumen dan pengendalian
+                    collateral.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOTO 5 -->
+
+        <div class="gallery-card">
+
+            <img src="gallery-meeting.jpg"
+                 alt="Exit Meeting">
+
+            <div class="gallery-caption">
+
+                <h3>
+                    Exit Meeting
+                </h3>
+
+                <p>
+                    Penyampaian hasil audit dan pembahasan
+                    tindak lanjut.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOTO 6 -->
+
+        <div class="gallery-card">
+
+            <img src="gallery-report.jpg"
+                 alt="Audit Reporting">
+
+            <div class="gallery-caption">
+
+                <h3>
+                    Audit Reporting
+                </h3>
+
+                <p>
+                    Analisis temuan, penyusunan laporan
+                    dan rekomendasi perbaikan.
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- ================= CONTACT ================= -->
+<!-- ================= AUDIT MINDSET ================= -->
 
-  <section id="contact">
+<section class="section">
 
-    <div class="container">
+    <div class="quote">
 
-      <div class="contact-card">
+        "Good audit is not only about finding problems,
+        but also about strengthening the control."
 
-        <h2>
-          Let's Connect
-        </h2>
+        <span>
+            — Maulana Dwi Saputro
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section" id="contact">
+
+    <div class="section-title">
+        <span>06</span>
+        <h2>Contact</h2>
+    </div>
+
+    <div class="contact">
 
         <p>
-          Open to professional opportunities in
-          Internal Audit, Internal Control,
-          Risk Management, Asset Management,
-          and related roles.
+            <strong>Maulana Dwi Saputro</strong>
         </p>
 
+        <p>
+            Internal Auditor & Internal Control Officer
+        </p>
 
-        <!-- GANTI DENGAN EMAIL ASLI -->
+        <!-- GANTI EMAIL -->
+        <p>
+            Email:
+            <a href="mailto:emailkamu@gmail.com">
+                emailkamu@gmail.com
+            </a>
+        </p>
 
-        <a class="contact-link"
-           href="mailto:your-email@example.com">
+        <!-- GANTI LINK LINKEDIN -->
+        <p>
+            LinkedIn:
+            <a href="https://linkedin.com/in/username"
+               target="_blank">
+                linkedin.com/in/username
+            </a>
+        </p>
 
-          ✉️ your-email@example.com
-
-        </a>
-
-
-        <!-- GANTI DENGAN LINK LINKEDIN ASLI -->
-
-        <a class="contact-link"
-           href="https://www.linkedin.com/"
-           target="_blank"
-           rel="noopener noreferrer">
-
-          🔗 LinkedIn Profile
-
-        </a>
-
-      </div>
+        <!-- GANTI NOMOR WHATSAPP -->
+        <p>
+            WhatsApp:
+            <a href="https://wa.me/628xxxxxxxxxx"
+               target="_blank">
+                Contact Me
+            </a>
+        </p>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- ================= FOOTER ================= -->
+<!-- ================= FOOTER ================= -->
 
-  <footer>
+<footer>
 
-    © 2026 Maulana Dwi Saputro• Internal Audit Portfolio
+    © 2026 Maulana Dwi Saputro.
+    Professional Portfolio.
 
-  </footer>
+</footer>
 
 
 </body>
